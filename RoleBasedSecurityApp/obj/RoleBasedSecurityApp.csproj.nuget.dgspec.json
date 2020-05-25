@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Noir\\source\\repos\\RoleBasedSecurityApp\\RoleBasedSecurityApp\\RoleBasedSecurityApp.csproj": {}
+    "C:\\Users\\Squidward\\Downloads\\RoleBasedSecurity-master(1)\\RoleBasedSecurity-master\\RoleBasedSecurityApp\\RoleBasedSecurityApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Noir\\source\\repos\\RoleBasedSecurityApp\\RoleBasedSecurityApp\\RoleBasedSecurityApp.csproj": {
+    "C:\\Users\\Squidward\\Downloads\\RoleBasedSecurity-master(1)\\RoleBasedSecurity-master\\RoleBasedSecurityApp\\RoleBasedSecurityApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Noir\\source\\repos\\RoleBasedSecurityApp\\RoleBasedSecurityApp\\RoleBasedSecurityApp.csproj",
+        "projectUniqueName": "C:\\Users\\Squidward\\Downloads\\RoleBasedSecurity-master(1)\\RoleBasedSecurity-master\\RoleBasedSecurityApp\\RoleBasedSecurityApp.csproj",
         "projectName": "RoleBasedSecurityApp",
-        "projectPath": "C:\\Users\\Noir\\source\\repos\\RoleBasedSecurityApp\\RoleBasedSecurityApp\\RoleBasedSecurityApp.csproj",
-        "packagesPath": "C:\\Users\\Noir\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Noir\\source\\repos\\RoleBasedSecurityApp\\RoleBasedSecurityApp\\obj\\",
+        "projectPath": "C:\\Users\\Squidward\\Downloads\\RoleBasedSecurity-master(1)\\RoleBasedSecurity-master\\RoleBasedSecurityApp\\RoleBasedSecurityApp.csproj",
+        "packagesPath": "C:\\Users\\Squidward\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Squidward\\Downloads\\RoleBasedSecurity-master(1)\\RoleBasedSecurity-master\\RoleBasedSecurityApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Noir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Squidward\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,6 +65,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.1, )"
             }
           },
           "imports": [
@@ -77,6 +81,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.0.3, 3.0.3]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -85,7 +107,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

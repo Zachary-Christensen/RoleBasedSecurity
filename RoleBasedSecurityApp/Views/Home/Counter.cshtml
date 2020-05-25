@@ -1,0 +1,27 @@
+﻿@model RoleBasedSecurityApp.Models.Counter
+@{
+    ViewData["Title"] = "Counter";
+}
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1>Counter</h1>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col">
+                <p class="text-center">@Model.Count</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col">
+                <div class="text-center">
+                    <form action="/Home/Counter" method="post">
+                        <button class="btn btn-success" type="submit">Add to Counter</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>

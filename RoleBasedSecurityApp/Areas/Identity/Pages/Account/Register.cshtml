@@ -28,11 +28,20 @@
                 <input asp-for="Input.ConfirmPassword" class="form-control" />
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Input.Role"></label>
-                <select asp-for="Input.Role" class="form-control" asp-items='new SelectList(roles, "Id", "Name")'></select>
-                <span asp-validation-for="Input.Role" class="text-danger"></span>
-            </div>
+            @if (roles != null)
+            {
+                <div class="form-group">
+                    <label asp-for="Input.Role"></label>
+                    <select asp-for="Input.Role" class="form-control" asp-items='@(new SelectList(roles, "Name", "Name"))'></select>
+                    <span asp-validation-for="Input.Role" class="text-danger"></span>
+                </div>
+            }
+            else
+            {
+                <br />
+                <span>*Roles were not provided</span>
+                <br />
+            }
             <button type="submit" class="btn btn-primary">Register</button>
         </form>
     </div>

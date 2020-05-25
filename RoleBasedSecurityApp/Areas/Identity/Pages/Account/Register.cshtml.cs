@@ -71,13 +71,19 @@ namespace RoleBasedSecurityApp.Areas.Identity.Pages.Account
             
         }
 
+        public void PopulateRoles()
+        {
+            ViewData["Roles"] = _roleManager.Roles.ToList();
+                //.FindAll(
+                //delegate (IdentityRole role1)
+                //{
+                //    return !role1.Name.StartsWith("Demo");
+                //});
+        }
+
         public async Task OnGetAsync(string returnUrl = null)
         {
-            ViewData["Roles"] = _roleManager.Roles.ToList().FindAll(
-                delegate (IdentityRole role1) 
-                { 
-                    return !role1.Name.StartsWith("Demo"); 
-                });
+            PopulateRoles();
 
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
@@ -94,6 +100,17 @@ namespace RoleBasedSecurityApp.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
+
+                    if (await _roleManager.RoleExistsAsync(Input.Role))
+                    {
+                        var submitterRoleName = "Submitter";
+                        var roles = new string[]{ Input.Role, submitterRoleName };
+                        var roleResult = await _userManager.AddToRolesAsync(user, roles);
+                        if (roleResult.Succeeded)
+                        {
+                            _logger.LogInformation("User added to Role " + Input.Role + " & Role " + submitterRoleName);
+                        }
+                    }
 
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
@@ -123,6 +140,7 @@ namespace RoleBasedSecurityApp.Areas.Identity.Pages.Account
             }
 
             // If we got this far, something failed, redisplay form
+            PopulateRoles();
             return Page();
         }
     }
