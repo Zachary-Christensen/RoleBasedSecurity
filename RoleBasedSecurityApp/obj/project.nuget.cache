@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RKpJT2y8HPSHSGyYnt1RFLJKnFkauqWxNZbhdJbOlbM0JSb/Po+3AtgVnGdqSxOu+FNzdelFhFzf0mn6fVMbBA==",
+  "dgSpecHash": "HEI8izOnAVru8B8OnQnDD7R5uEfzcrwpG+6iJJ2g3q4Z+IzPPXBrWulc1eZNdr/pCVYoDon1i0/nMXmZPYnrYQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Squidward\\Downloads\\RoleBasedSecurity-master(1)\\RoleBasedSecurity-master\\RoleBasedSecurityApp\\RoleBasedSecurityApp.csproj",
+  "projectFilePath": "C:\\Users\\Squidward\\Desktop\\BugTracker\\Project\\RoleBasedSecurity\\RoleBasedSecurityApp\\RoleBasedSecurityApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Squidward\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.0.0\\microsoft.aspnetcore.cryptography.internal.3.0.0.nupkg.sha512",
     "C:\\Users\\Squidward\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.0.0\\microsoft.aspnetcore.cryptography.keyderivation.3.0.0.nupkg.sha512",

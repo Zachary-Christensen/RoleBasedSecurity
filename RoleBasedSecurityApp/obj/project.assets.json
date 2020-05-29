@@ -8614,11 +8614,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Squidward\\Downloads\\RoleBasedSecurity-master(1)\\RoleBasedSecurity-master\\RoleBasedSecurityApp\\RoleBasedSecurityApp.csproj",
+      "projectUniqueName": "C:\\Users\\Squidward\\Desktop\\BugTracker\\Project\\RoleBasedSecurity\\RoleBasedSecurityApp\\RoleBasedSecurityApp.csproj",
       "projectName": "RoleBasedSecurityApp",
-      "projectPath": "C:\\Users\\Squidward\\Downloads\\RoleBasedSecurity-master(1)\\RoleBasedSecurity-master\\RoleBasedSecurityApp\\RoleBasedSecurityApp.csproj",
+      "projectPath": "C:\\Users\\Squidward\\Desktop\\BugTracker\\Project\\RoleBasedSecurity\\RoleBasedSecurityApp\\RoleBasedSecurityApp.csproj",
       "packagesPath": "C:\\Users\\Squidward\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Squidward\\Downloads\\RoleBasedSecurity-master(1)\\RoleBasedSecurity-master\\RoleBasedSecurityApp\\obj\\",
+      "outputPath": "C:\\Users\\Squidward\\Desktop\\BugTracker\\Project\\RoleBasedSecurity\\RoleBasedSecurityApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Squidward\\AppData\\Roaming\\NuGet\\NuGet.Config",
